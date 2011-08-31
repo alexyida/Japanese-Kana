@@ -1,0 +1,1752 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Japanese_Kana.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:toolkitPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Name="KanaPivot" Title="JAPANESE KANA">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="ひらがな">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Rectangle Grid.Row="0" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">A</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">I</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">U</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">E</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">O</TextBlock>
+                    </Grid>
+                    
+                    <ScrollViewer Grid.Row="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                    
+                            <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Seion</TextBlock>
+
+                            <Rectangle Grid.Row="1" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="1" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="a">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="1" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="i">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="1" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="u">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="1" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="e">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="1" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="o">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">-</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">あ</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">い</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">う</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">え</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">お</TextBlock>
+
+                            <Rectangle Grid.Row="2" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="2" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ka">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="2" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ki">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="2" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ku">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="2" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ke">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="2" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ko">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">K</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">か</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">き</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">く</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">け</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">こ</TextBlock>
+
+                            <Rectangle Grid.Row="3" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="3" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="sa" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="3" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="shi" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="3" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="su" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="3" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="se" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="3" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="so" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">S</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">さ</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">し</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">す</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">せ</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">そ</TextBlock>
+
+                            <Rectangle Grid.Row="4" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="4" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ta">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="4" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="chi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="4" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="tsu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="4" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="te">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="4" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="to">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">T</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">た</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ち</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">つ</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">て</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">と</TextBlock>
+                        
+                            <Rectangle Grid.Row="5" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="5" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="na">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="5" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ni">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="5" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="nu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="5" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ne">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="5" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="no">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">N</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">な</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">に</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぬ</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ね</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">の</TextBlock>
+
+                            <Rectangle Grid.Row="6" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="6" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ha">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="6" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="hi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="6" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="fu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="6" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="he">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="6" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ho">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="6" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">H</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">は</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ひ</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ふ</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">へ</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ほ</TextBlock>
+
+                            <Rectangle Grid.Row="7" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="7" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ma">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="7" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="mi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="7" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="mu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="7" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="me">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="7" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="mo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">M</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ま</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">み</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">む</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">め</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">も</TextBlock>
+
+                            <Rectangle Grid.Row="8" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="8" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="8" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="8" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="yu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="8" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="8" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="yo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="8" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Y</TextBlock>
+                            <TextBlock Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">や</TextBlock>
+                            <TextBlock Grid.Row="8" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ゆ</TextBlock>
+                            <TextBlock Grid.Row="8" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">よ</TextBlock>
+
+                            <Rectangle Grid.Row="9" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="9" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ra">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="9" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ri">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="9" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ru">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="9" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="re">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="9" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ro">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="9" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">R</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ら</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">り</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">る</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">れ</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ろ</TextBlock>
+
+                            <Rectangle Grid.Row="10" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="10" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="wa">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="10" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="10" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="10" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="10" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="wo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="10" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">W</TextBlock>
+                            <TextBlock Grid.Row="10" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">わ</TextBlock>
+                            <TextBlock Grid.Row="10" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">を</TextBlock>
+
+                            <Rectangle Grid.Row="11" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="11" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="n">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="11" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="11" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="11" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="11" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <TextBlock Grid.Row="11" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">-</TextBlock>
+                            <TextBlock Grid.Row="11" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ん</TextBlock>
+
+                            <Rectangle Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Dakuon</TextBlock>
+
+                            <Rectangle Grid.Row="13" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="13" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ga">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="13" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="13" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="13" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ge">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="13" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="go">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="13" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">G</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">が</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぎ</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぐ</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">げ</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ご</TextBlock>
+
+                            <Rectangle Grid.Row="14" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="14" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="za">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="14" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ji">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="14" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="zu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="14" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ze">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="14" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="zo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="14" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Z</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ざ</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">じ</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ず</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぜ</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぞ</TextBlock>
+
+                            <Rectangle Grid.Row="15" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="15" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="da">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="15" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ji" Name="di">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="15" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="zu" Name="du">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="15" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="de">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="15" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="do">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="15" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">D</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">だ</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぢ</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">づ</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">で</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ど</TextBlock>
+
+                            <Rectangle Grid.Row="16" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="16" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ba">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+
+                            <Rectangle Grid.Row="16" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="bi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="16" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="bu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="16" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="be">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="16" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="bo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="16" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">B</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ば</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">び</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぶ</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">べ</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぼ</TextBlock>
+
+                            <Rectangle Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">HanDakuon</TextBlock>
+
+                            <Rectangle Grid.Row="18" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="18" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pa">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="18" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="18" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="18" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pe">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="18" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="po">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="18" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">P</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぱ</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぴ</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぷ</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぺ</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぽ</TextBlock>
+
+
+                            <Rectangle Grid.Row="19" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="19" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Yoon</TextBlock>
+
+                            <Rectangle Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Seion</TextBlock>
+
+                            <Rectangle Grid.Row="21" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="21" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="kya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="21" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="21" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="kyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="21" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="21" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="kyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="21" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Ky</TextBlock>
+                            <TextBlock Grid.Row="21" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">きゃ</TextBlock>
+                            <TextBlock Grid.Row="21" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">きゅ</TextBlock>
+                            <TextBlock Grid.Row="21" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">きょ</TextBlock>
+
+                            <Rectangle Grid.Row="22" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="22" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="sha">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="22" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="22" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="shu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="22" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="22" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="sho">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="22" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Sh</TextBlock>
+                            <TextBlock Grid.Row="22" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">しゃ</TextBlock>
+                            <TextBlock Grid.Row="22" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">しゅ</TextBlock>
+                            <TextBlock Grid.Row="22" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">しょ</TextBlock>
+
+                            <Rectangle Grid.Row="23" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="23" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="cha">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="23" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="23" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="chu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="23" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="23" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="cho">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="23" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Ch</TextBlock>
+                            <TextBlock Grid.Row="23" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ちゃ</TextBlock>
+                            <TextBlock Grid.Row="23" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ちゅ</TextBlock>
+                            <TextBlock Grid.Row="23" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ちょ</TextBlock>
+
+                            <Rectangle Grid.Row="24" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="24" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="nya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="24" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="24" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="nyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="24" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="24" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="nyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="24" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Ny</TextBlock>
+                            <TextBlock Grid.Row="24" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">にゃ</TextBlock>
+                            <TextBlock Grid.Row="24" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">にゅ</TextBlock>
+                            <TextBlock Grid.Row="24" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">にょ</TextBlock>
+
+                            <Rectangle Grid.Row="25" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="25" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="hya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="25" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="25" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="hyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="25" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="25" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="hyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="25" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Hy</TextBlock>
+                            <TextBlock Grid.Row="25" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ひゃ</TextBlock>
+                            <TextBlock Grid.Row="25" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ひゅ</TextBlock>
+                            <TextBlock Grid.Row="25" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ひょ</TextBlock>
+
+                            <Rectangle Grid.Row="26" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="26" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="mya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="26" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="26" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="myu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="26" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="26" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="myo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="26" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">My</TextBlock>
+                            <TextBlock Grid.Row="26" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">みゃ</TextBlock>
+                            <TextBlock Grid.Row="26" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">みゅ</TextBlock>
+                            <TextBlock Grid.Row="26" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">みょ</TextBlock>
+
+                            <Rectangle Grid.Row="27" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="27" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="rya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="27" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="27" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ryu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="27" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="27" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ryo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="27" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Ry</TextBlock>
+                            <TextBlock Grid.Row="27" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">りゃ</TextBlock>
+                            <TextBlock Grid.Row="27" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">りゅ</TextBlock>
+                            <TextBlock Grid.Row="27" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">りょ</TextBlock>
+
+                            <Rectangle Grid.Row="28" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="28" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Dakuon</TextBlock>
+
+                            <Rectangle Grid.Row="29" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="29" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="29" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="29" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="29" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="29" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="29" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Gy</TextBlock>
+                            <TextBlock Grid.Row="29" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぎゃ</TextBlock>
+                            <TextBlock Grid.Row="29" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぎゅ</TextBlock>
+                            <TextBlock Grid.Row="29" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぎょ</TextBlock>
+
+                            <Rectangle Grid.Row="30" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="30" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ja">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="30" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="30" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ju">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="30" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="30" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="jo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="30" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">J</TextBlock>
+                            <TextBlock Grid.Row="30" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">じゃ</TextBlock>
+                            <TextBlock Grid.Row="30" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">じゅ</TextBlock>
+                            <TextBlock Grid.Row="30" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">じょ</TextBlock>
+
+                            <Rectangle Grid.Row="31" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="31" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="bya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="31" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="31" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="byu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="31" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="31" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="byo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="31" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">By</TextBlock>
+                            <TextBlock Grid.Row="31" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">びゃ</TextBlock>
+                            <TextBlock Grid.Row="31" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">びゅ</TextBlock>
+                            <TextBlock Grid.Row="31" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">びょ</TextBlock>
+
+                            <Rectangle Grid.Row="32" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="32" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">HanDakuon</TextBlock>
+
+                            <Rectangle Grid.Row="33" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="33" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="33" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="33" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="33" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="33" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="33" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Py</TextBlock>
+                            <TextBlock Grid.Row="33" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぴゃ</TextBlock>
+                            <TextBlock Grid.Row="33" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぴゅ</TextBlock>
+                            <TextBlock Grid.Row="33" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ぴょ</TextBlock>
+
+                        </Grid>
+                    </ScrollViewer>
+
+                </Grid>
+            </controls:PivotItem>
+            
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="カタカナ">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Rectangle Grid.Row="0" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <Rectangle Grid.Row="0" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                        <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">A</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">I</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">U</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">E</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">O</TextBlock>
+                    </Grid>
+
+                    <ScrollViewer Grid.Row="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Seion</TextBlock>
+
+                            <Rectangle Grid.Row="1" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="1" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="a">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="1" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="i">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="1" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="u">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="1" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="e">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="1" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="o">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">-</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ア</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">イ</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ウ</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">エ</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">オ</TextBlock>
+
+                            <Rectangle Grid.Row="2" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="2" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ka">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="2" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ki">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="2" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ku">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="2" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ke">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="2" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ko">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">K</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">カ</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">キ</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ク</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ケ</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">コ</TextBlock>
+
+                            <Rectangle Grid.Row="3" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="3" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="sa" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="3" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="shi" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="3" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="su" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="3" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="se" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="3" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="so" >
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">S</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">サ</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">シ</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ス</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">セ</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ソ</TextBlock>
+
+                            <Rectangle Grid.Row="4" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="4" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ta">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="4" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="chi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="4" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="tsu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="4" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="te">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="4" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="to">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">T</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">タ</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">チ</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ツ</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">テ</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ト</TextBlock>
+
+                            <Rectangle Grid.Row="5" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="5" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="na">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="5" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ni">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="5" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="nu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="5" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ne">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="5" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="no">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">N</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ナ</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ニ</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヌ</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ネ</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ノ</TextBlock>
+
+                            <Rectangle Grid.Row="6" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="6" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ha">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="6" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="hi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="6" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="fu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="6" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="he">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="6" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ho">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="6" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">H</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ハ</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヒ</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">フ</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヘ</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ホ</TextBlock>
+
+                            <Rectangle Grid.Row="7" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="7" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ma">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="7" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="mi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="7" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="mu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="7" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="me">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="7" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="mo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">M</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">マ</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ミ</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ム</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">メ</TextBlock>
+                            <TextBlock Grid.Row="7" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">モ</TextBlock>
+
+                            <Rectangle Grid.Row="8" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="8" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="8" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="8" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="yu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="8" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="8" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="yo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="8" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Y</TextBlock>
+                            <TextBlock Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヤ</TextBlock>
+                            <TextBlock Grid.Row="8" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ユ</TextBlock>
+                            <TextBlock Grid.Row="8" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヨ</TextBlock>
+
+                            <Rectangle Grid.Row="9" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="9" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ra">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="9" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ri">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="9" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ru">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="9" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="re">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="9" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ro">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="9" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">R</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ラ</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">リ</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ル</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">レ</TextBlock>
+                            <TextBlock Grid.Row="9" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ロ</TextBlock>
+
+                            <Rectangle Grid.Row="10" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="10" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="wa">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="10" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="10" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="10" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="10" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="wo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="10" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">W</TextBlock>
+                            <TextBlock Grid.Row="10" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ワ</TextBlock>
+                            <TextBlock Grid.Row="10" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヲ</TextBlock>
+
+                            <Rectangle Grid.Row="11" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="11" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="n">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="11" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="11" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="11" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="11" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <TextBlock Grid.Row="11" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">-</TextBlock>
+                            <TextBlock Grid.Row="11" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ン</TextBlock>
+
+                            <Rectangle Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Dakuon</TextBlock>
+
+                            <Rectangle Grid.Row="13" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="13" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ga">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="13" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="13" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="13" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ge">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="13" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="go">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="13" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">G</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ガ</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ギ</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">グ</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ゲ</TextBlock>
+                            <TextBlock Grid.Row="13" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ゴ</TextBlock>
+
+                            <Rectangle Grid.Row="14" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="14" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="za">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="14" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ji">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="14" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="zu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="14" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ze">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="14" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="zo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="14" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Z</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ザ</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ジ</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ズ</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ゼ</TextBlock>
+                            <TextBlock Grid.Row="14" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ゾ</TextBlock>
+
+                            <Rectangle Grid.Row="15" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="15" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="da">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="15" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ji" Name="DI">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="15" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="zu" Name="DU">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="15" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="de">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="15" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="do">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="15" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">D</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ダ</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヂ</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヅ</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">デ</TextBlock>
+                            <TextBlock Grid.Row="15" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ド</TextBlock>
+
+                            <Rectangle Grid.Row="16" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="16" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ba">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+
+                            <Rectangle Grid.Row="16" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="bi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="16" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="bu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="16" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="be">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="16" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="bo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="16" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">B</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">バ</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ビ</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ブ</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ベ</TextBlock>
+                            <TextBlock Grid.Row="16" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ボ</TextBlock>
+
+                            <Rectangle Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">HanDakuon</TextBlock>
+
+                            <Rectangle Grid.Row="18" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="18" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pa">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="18" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pi">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="18" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="18" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pe">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="18" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="po">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="18" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">P</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">パ</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ピ</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">プ</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ペ</TextBlock>
+                            <TextBlock Grid.Row="18" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ポ</TextBlock>
+
+
+                            <Rectangle Grid.Row="19" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="19" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Yoon</TextBlock>
+
+                            <Rectangle Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Seion</TextBlock>
+
+                            <Rectangle Grid.Row="21" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="21" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="kya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="21" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="21" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="kyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="21" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="21" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="kyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="21" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Ky</TextBlock>
+                            <TextBlock Grid.Row="21" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">キャ</TextBlock>
+                            <TextBlock Grid.Row="21" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">キュ</TextBlock>
+                            <TextBlock Grid.Row="21" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">キョ</TextBlock>
+
+                            <Rectangle Grid.Row="22" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="22" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="sha">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="22" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="22" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="shu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="22" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="22" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="sho">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="22" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Sh</TextBlock>
+                            <TextBlock Grid.Row="22" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">シャ</TextBlock>
+                            <TextBlock Grid.Row="22" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">シュ</TextBlock>
+                            <TextBlock Grid.Row="22" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ショ</TextBlock>
+
+                            <Rectangle Grid.Row="23" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="23" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="cha">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="23" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="23" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="chu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="23" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="23" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="cho">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="23" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Ch</TextBlock>
+                            <TextBlock Grid.Row="23" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">チャ</TextBlock>
+                            <TextBlock Grid.Row="23" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">チュ</TextBlock>
+                            <TextBlock Grid.Row="23" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">チョ</TextBlock>
+
+                            <Rectangle Grid.Row="24" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="24" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="nya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="24" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="24" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="nyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="24" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="24" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="nyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="24" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Ny</TextBlock>
+                            <TextBlock Grid.Row="24" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ニャ</TextBlock>
+                            <TextBlock Grid.Row="24" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ニュ</TextBlock>
+                            <TextBlock Grid.Row="24" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ニョ</TextBlock>
+
+                            <Rectangle Grid.Row="25" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="25" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="hya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="25" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="25" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="hyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="25" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="25" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="hyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="25" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Hy</TextBlock>
+                            <TextBlock Grid.Row="25" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヒャ</TextBlock>
+                            <TextBlock Grid.Row="25" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヒュ</TextBlock>
+                            <TextBlock Grid.Row="25" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ヒョ</TextBlock>
+
+                            <Rectangle Grid.Row="26" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="26" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="mya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="26" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="26" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="myu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="26" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="26" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="myo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="26" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">My</TextBlock>
+                            <TextBlock Grid.Row="26" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ミャ</TextBlock>
+                            <TextBlock Grid.Row="26" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ミュ</TextBlock>
+                            <TextBlock Grid.Row="26" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ミョ</TextBlock>
+
+                            <Rectangle Grid.Row="27" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="27" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="rya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="27" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="27" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ryu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="27" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="27" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ryo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="27" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Ry</TextBlock>
+                            <TextBlock Grid.Row="27" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">リャ</TextBlock>
+                            <TextBlock Grid.Row="27" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">リュ</TextBlock>
+                            <TextBlock Grid.Row="27" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">リョ</TextBlock>
+
+                            <Rectangle Grid.Row="28" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="28" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Dakuon</TextBlock>
+
+                            <Rectangle Grid.Row="29" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="29" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="29" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="29" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="29" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="29" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="gyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="29" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Gy</TextBlock>
+                            <TextBlock Grid.Row="29" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ギャ</TextBlock>
+                            <TextBlock Grid.Row="29" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ギュ</TextBlock>
+                            <TextBlock Grid.Row="29" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ギョ</TextBlock>
+
+                            <Rectangle Grid.Row="30" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="30" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ja">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="30" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="30" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="ju">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="30" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="30" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="jo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="30" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">J</TextBlock>
+                            <TextBlock Grid.Row="30" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ジャ</TextBlock>
+                            <TextBlock Grid.Row="30" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ジュ</TextBlock>
+                            <TextBlock Grid.Row="30" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ジョ</TextBlock>
+
+                            <Rectangle Grid.Row="31" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="31" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="bya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="31" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="31" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="byu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="31" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="31" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="byo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="31" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">By</TextBlock>
+                            <TextBlock Grid.Row="31" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ビャ</TextBlock>
+                            <TextBlock Grid.Row="31" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ビュ</TextBlock>
+                            <TextBlock Grid.Row="31" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ビョ</TextBlock>
+
+                            <Rectangle Grid.Row="32" Grid.Column="0" Grid.ColumnSpan="6" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}"></Rectangle>
+                            <TextBlock Grid.Row="32" Grid.Column="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">HanDakuon</TextBlock>
+
+                            <Rectangle Grid.Row="33" Grid.Column="0" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="33" Grid.Column="1" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pya">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="33" Grid.Column="2" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="33" Grid.Column="3" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pyu">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <Rectangle Grid.Row="33" Grid.Column="4" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" />
+                            <Rectangle Grid.Row="33" Grid.Column="5" Fill="Transparent" Stroke="{StaticResource PhoneAccentBrush}" Tag="pyo">
+                                <toolkit:GestureService.GestureListener>
+                                    <toolkit:GestureListener Hold="GestureListener_Hold" />
+                                </toolkit:GestureService.GestureListener>
+                            </Rectangle>
+                            <TextBlock Grid.Row="33" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextLargeStyle}">Py</TextBlock>
+                            <TextBlock Grid.Row="33" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ピャ</TextBlock>
+                            <TextBlock Grid.Row="33" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ピュ</TextBlock>
+                            <TextBlock Grid.Row="33" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}">ピョ</TextBlock>
+
+                        </Grid>
+                    </ScrollViewer>
+
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+        <Popup Name="PopupWindow" IsOpen="False" HorizontalAlignment="Center" VerticalAlignment="Center" Height="300" Width="400" Grid.Row="0" Grid.RowSpan="2">
+            <Border BorderThickness="1" BorderBrush="{StaticResource PhoneForegroundBrush}">
+                <Grid HorizontalAlignment="Center" Height="300" Width="400" Background="{StaticResource PhoneBackgroundBrush}" Opacity="0.85">
+
+                    <toolkit:GestureService.GestureListener>
+                        <toolkit:GestureListener Tap="GestureListener_Tap" />
+                    </toolkit:GestureService.GestureListener>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="125" />
+                        <RowDefinition Height="125" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="200" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Name="hiraganaTextBlock" Grid.Row="0" Grid.Column="0" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextTitle1Style}" HorizontalAlignment="Center">あ</TextBlock>
+                    <TextBlock Name="katakanaTextBlock" Grid.Row="0" Grid.Column="1" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextTitle1Style}" HorizontalAlignment="Center">ア</TextBlock>
+                    <TextBlock Name="romajiTextBlock" Grid.Row="1" Grid.Column="0" Foreground="{StaticResource PhoneAccentBrush}" Grid.ColumnSpan="2" Style="{StaticResource PhoneTextTitle1Style}" HorizontalAlignment="Center">a</TextBlock>
+                    <HyperlinkButton Name="BuyHB" Click="BuyHB_Click" Grid.Row="2" Grid.Column="0" Foreground="{StaticResource PhoneAccentBrush}" Grid.ColumnSpan="2" HorizontalAlignment="Center" Visibility="Collapsed" Content="buy full version to get audio" />
+                </Grid>
+                </Border>
+        </Popup>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="appbar_about" IconUri="/Images/appbar.questionmark.rest.png" Text="About" Click="appbar_about_Click"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="katakana for loan words" Click="ApplicationBarMenuItem_Click"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+        
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+</phone:PhoneApplicationPage>

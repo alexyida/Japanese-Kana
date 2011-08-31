@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE221A35-5E16-4E9F-B7A0-7D00965FC017}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Japanese_Kana</RootNamespace>
+    <AssemblyName>Japanese Kana</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Japanese_Kana.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Japanese_Kana.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="katakana.xaml.cs">
+      <DependentUpon>katakana.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\a.wav" />
+    <Content Include="Audio\ba.wav" />
+    <Content Include="Audio\be.wav" />
+    <Content Include="Audio\bi.wav" />
+    <Content Include="Audio\bo.wav" />
+    <Content Include="Audio\bu.wav" />
+    <Content Include="Audio\bya.wav" />
+    <Content Include="Audio\byo.wav" />
+    <Content Include="Audio\byu.wav" />
+    <Content Include="Audio\cha.wav" />
+    <Content Include="Audio\chi.wav" />
+    <Content Include="Audio\cho.wav" />
+    <Content Include="Audio\chu.wav" />
+    <Content Include="Audio\da.wav" />
+    <Content Include="Audio\de.wav" />
+    <Content Include="Audio\do.wav" />
+    <Content Include="Audio\e.wav" />
+    <Content Include="Audio\fu.wav" />
+    <Content Include="Audio\ga.wav" />
+    <Content Include="Audio\ge.wav" />
+    <Content Include="Audio\gi.wav" />
+    <Content Include="Audio\go.wav" />
+    <Content Include="Audio\gu.wav" />
+    <Content Include="Audio\gya.wav" />
+    <Content Include="Audio\gyo.wav" />
+    <Content Include="Audio\gyu.wav" />
+    <Content Include="Audio\ha.wav" />
+    <Content Include="Audio\he.wav" />
+    <Content Include="Audio\hi.wav" />
+    <Content Include="Audio\ho.wav" />
+    <Content Include="Audio\hya.wav" />
+    <Content Include="Audio\hyo.wav" />
+    <Content Include="Audio\hyu.wav" />
+    <Content Include="Audio\i.wav" />
+    <Content Include="Audio\ja.wav" />
+    <Content Include="Audio\ji.wav" />
+    <Content Include="Audio\jo.wav" />
+    <Content Include="Audio\ju.wav" />
+    <Content Include="Audio\ka.wav" />
+    <Content Include="Audio\ke.wav" />
+    <Content Include="Audio\ki.wav" />
+    <Content Include="Audio\ko.wav" />
+    <Content Include="Audio\ku.wav" />
+    <Content Include="Audio\kya.wav" />
+    <Content Include="Audio\kyo.wav" />
+    <Content Include="Audio\kyu.wav" />
+    <Content Include="Audio\ma.wav" />
+    <Content Include="Audio\me.wav" />
+    <Content Include="Audio\mi.wav" />
+    <Content Include="Audio\mo.wav" />
+    <Content Include="Audio\mu.wav" />
+    <Content Include="Audio\mya.wav" />
+    <Content Include="Audio\myo.wav" />
+    <Content Include="Audio\myu.wav" />
+    <Content Include="Audio\n.wav" />
+    <Content Include="Audio\na.wav" />
+    <Content Include="Audio\ne.wav" />
+    <Content Include="Audio\ni.wav" />
+    <Content Include="Audio\no.wav" />
+    <Content Include="Audio\nu.wav" />
+    <Content Include="Audio\nya.wav" />
+    <Content Include="Audio\nyo.wav" />
+    <Content Include="Audio\nyu.wav" />
+    <Content Include="Audio\o.wav" />
+    <Content Include="Audio\pa.wav" />
+    <Content Include="Audio\pe.wav" />
+    <Content Include="Audio\pi.wav" />
+    <Content Include="Audio\po.wav" />
+    <Content Include="Audio\pu.wav" />
+    <Content Include="Audio\pya.wav" />
+    <Content Include="Audio\pyo.wav" />
+    <Content Include="Audio\pyu.wav" />
+    <Content Include="Audio\ra.wav" />
+    <Content Include="Audio\re.wav" />
+    <Content Include="Audio\ri.wav" />
+    <Content Include="Audio\ro.wav" />
+    <Content Include="Audio\ru.wav" />
+    <Content Include="Audio\rya.wav" />
+    <Content Include="Audio\ryo.wav" />
+    <Content Include="Audio\ryu.wav" />
+    <Content Include="Audio\sa.wav" />
+    <Content Include="Audio\se.wav" />
+    <Content Include="Audio\sha.wav" />
+    <Content Include="Audio\shi.wav" />
+    <Content Include="Audio\sho.wav" />
+    <Content Include="Audio\shu.wav" />
+    <Content Include="Audio\so.wav" />
+    <Content Include="Audio\su.wav" />
+    <Content Include="Audio\ta.wav" />
+    <Content Include="Audio\te.wav" />
+    <Content Include="Audio\to.wav" />
+    <Content Include="Audio\tsu.wav" />
+    <Content Include="Audio\u.wav" />
+    <Content Include="Audio\wa.wav" />
+    <Content Include="Audio\wo.wav" />
+    <Content Include="Audio\ya.wav" />
+    <Content Include="Audio\yo.wav" />
+    <Content Include="Audio\yu.wav" />
+    <Content Include="Audio\za.wav" />
+    <Content Include="Audio\ze.wav" />
+    <Content Include="Audio\zo.wav" />
+    <Content Include="Audio\zu.wav" />
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.questionmark.rest.png" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="katakana.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
